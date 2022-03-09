@@ -5,20 +5,14 @@ function binarySearch(array, tar) {
     while (l <= r) {
 	    var m = Math.round((l+r)/2)
 
-	    if (tar == array[m]) {
-	      return m	
-	    }
+	    if (tar == array[m]) { return m }
 
-	    else if (tar < array[m]) {
-	      r -= m-1
-	    }
+	    else if (tar < array[m]) { r -= m-1 }
 
-	    else {
-	      l += m+1
-	    }
+	    else { l += m+1 }
     }
 
-  return false
+  return -1
 }
 
 // Example below
@@ -26,4 +20,12 @@ function binarySearch(array, tar) {
 var array = [1,2,3,4];
 var target = 3;
 
-console.log(binarySearch(array, target));
+var result = binarySearch(array, target);
+
+if (!(result == -1)) {
+    console.log(result);	
+}
+
+else {
+    console.log("Not found");
+}
