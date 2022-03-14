@@ -13,11 +13,11 @@ def binary_search(li, tar) -> int:
         else:
             l += m+1
 
-    return False
+    return -1
 
 # Example below
 
-array = [1,2,3,4]
+array = [1,2,3,4,5]
 target = 3
 
 print(binary_search(array, target))
