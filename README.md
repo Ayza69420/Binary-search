@@ -1,3 +1,3 @@
-# Binary-search
+# Binary search
 
-Binary search algorithm implemented in python and javascript.
+Binary search is a searching algorithm that returns the index of a target value, done on sorted array. here I implemented it in python and javascript.
