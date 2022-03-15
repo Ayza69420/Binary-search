@@ -1,13 +1,13 @@
-def binary_search(li, tar) -> int:
-    l, r = 0, len(li)-1
+def binary_search(a, t) -> int:
+    l, r = 0, len(a)-1
 
     while l <= r:
         m=(l+r)//2
 
-        if tar == li[m]:
+        if t == a[m]:
             return m
 
-        elif tar < li[m]:
+        elif t < a[m]:
             r -= m-1
 
         else:
