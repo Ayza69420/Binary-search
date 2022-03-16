@@ -20,12 +20,4 @@ function binarySearch(array, tar) {
 var array = [1,2,3,4];
 var target = 3;
 
-var result = binarySearch(array, target);
-
-if (!(result == -1)) {
-    console.log(result);	
-}
-
-else {
-    console.log("Not found");
-}
+console.log(binarySearch(array, target));
