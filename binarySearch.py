@@ -1,17 +1,17 @@
-def binary_search(a, t) -> int:
-    l, r = 0, len(a)-1
+def binarySearch(array, target) -> int:
+    left, right = 0, len(array)-1
 
-    while l <= r:
-        m=(l+r)//2
+    while left <= right:
+        middle = (left+right)//2
 
-        if t == a[m]:
-            return m
+        if array[middle] == target:
+            return middle
 
-        elif t < a[m]:
-            r -= m-1
+        elif array[middle] < target:
+            left += middle+1
 
         else:
-            l += m+1
+            right -= middle-1
 
     return -1
 
