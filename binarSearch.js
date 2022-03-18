@@ -14,10 +14,3 @@ function binarySearch(array, tar) {
 
   return -1
 }
-
-// Example below
-
-var array = [1,2,3,4];
-var target = 3;
-
-console.log(binarySearch(array, target));
