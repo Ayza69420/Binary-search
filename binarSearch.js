@@ -7,9 +7,9 @@ function binarySearch(array, tar) {
 
 	    if (tar == array[m]) { return m }
 
-	    else if (tar < array[m]) { r -= m-1 }
+	    else if (tar < array[m]) { r = m-1 }
 
-	    else { l += m+1 }
+	    else { l = m+1 }
     }
 
   return -1
